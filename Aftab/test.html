@@ -1,0 +1,42 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>وبگو | استفاده از فونت فارسی در وب</title>
+<!-- https://webgoo.ir -->
+<style type="text/css">
+body{
+    font-family:Tahoma, Geneva, sans-serif;
+    direction:rtl;
+    font-size:12px;
+}
+@font-face {
+    font-family:'BYekan';/*تعریف یک نام برای فونت*/
+    src:url('font/BYekan.eot');/*اکسپلورر 9 به بعد*/
+    src:local('bYekan'),/*بررسی نصب بودن فونت در سیستم کاربر*/
+        local('b Yekan'),/*برای برخی از مرورگرها مانند سافاری*/
+        url('font/IRANSansWeb.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
+        url('font/IRANSansWeb.woff') format('woff'),/*مرورگر های جدید*/
+        url('font/IRANSansWeb.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
+        url('font/IRANSansWeb.svg#BYekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
+    font-style:normal;
+    font-weight:normal;
+}
+.post-titr p{
+    font-family:BYekan, Tahoma, Geneva, sans-serif;
+    display:block;
+    font-size:16px;
+}
+</style>
+</head>
+<body>
+<div class="post-titr">
+<p>
+این یک متن فارسی با استفاده از خاصیت font-face در css3 است!
+</p>
+</div>
+<hr />
+با افزودن src و local این امکان وجود دارد که ابتدا فونت مورد نظر در سیستم کاربر جستجو گردد و در صورت عدم نصب، فونت از سرور بارگذاری شود.
+</body>
+</html>

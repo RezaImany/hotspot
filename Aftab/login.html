@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>فست فود آفتاب</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+   </head>
+   <body class="size-1140" style="background-color: #f89d13;">
+    $(if chap-id)
+
+
+        <script type="text/javascript" src="/md5.js"></script>
+        <script type="text/javascript">
+        <!--
+            function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+            }
+        //-->
+        </script>
+    $(endif)
+      <!-- TOP NAV WITH LOGO -->
+      <header>
+         <nav>
+            <div class="line">
+               <div class="top-nav">
+                  <div class="s-12 l-3">
+                     <div class="box" style="border-top: solid 0.8em rgba(237,44,0,1.00)"><a href="#"><img src="images/logo.jpg"></a></div>
+                     <div class="box" style="margin-top:5%;">
+                        <h3 style="text-align:center; padding-bottom:5% ; font-family: 'mfg' ;
+                        	   font-style: normal">ورود به سیستم</h3>
+                        <form class="customform" name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+
+                        <input name="username" type="text" value="$(username)" placeholder="User ID" required>
+                        <input name="password" type="password" placeholder="Password" required>
+                        <button type="Submit" style="font-family: 'mfg' ;
+                        	   font-style: normal;">ورود به سیستم</button>
+
+		<a class="button m-12 l-4 center" style="font-family: 'mfg' ;
+         font-style: normal;" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">اینترنت رایگان </a>
+                        </form>
+                        $(if error)<br /><div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)
+                     </div>
+                  </div>
+                  <p class="nav-text">منو
+                  </p>
+                  <ul class="top-ul chevron">
+
+                     <div class="s-12 l-9">
+                     <div class="right">
+                        <li> <a>Home</a></li>
+                        <li><a href="#app" style="font-family: 'mfg' ;
+                        	   font-style: normal;">اپلیکیشن آفتاب</a></li>
+                        <!-- <li><a>Rp 5.000 - 7 jam (aktif 24 jam)</a></li> -->
+                        <li><a href="#City" style="font-family: 'mfg' ;
+                        	   font-style: normal;">اپلیکیشن شهر من</a></li>
+                        <li><a href="#third-block" style="font-family: 'mfg' ;
+                        	   font-style: normal;">گالری</a></li>
+                        <li><a href="#" style="font-family: 'mfg' ;
+                        	   font-style: normal;">تماس</a></li>
+                     </div>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section>
+         <!-- CAROUSEL -->
+         <div id="carousel">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+               <div class="item">
+                  <img src="img/first.jpg" alt="">
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                        </div>
+                        <div class="s-12 l-9 right">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="img/second.jpg" alt="">
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                        </div>
+                        <div class="s-12 l-9 right">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="img/third.jpg" alt="">
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                        </div>
+                        <div class="s-12 l-9 right">
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="img/four.jpg" alt="">
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                        </div>
+                        <div class="s-12 l-9 right">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="fourth-block">
+            <div class="line">
+               <div id="owl-demo2" class="owl-carousel owl-theme">
+                  <div class="item">
+                     <h2 style="font-family: 'mfg' ;
+                      font-style: normal;"> مکانی آرام و دلپذیز </h2>
+                     <p class="s-12 l-8 center" style="font-family: 'mfg' ;
+                          font-style: normal;">پذیرایی مناسب از همکاران و شرکای تجاری و کاری همواره یکی از مهم‌ترین نگرانی‌های مدیران ادارات و شرکت‌ها می‌باشد. آماده‌ایم تا از میهمانان شما در مکانی آرام و زیبا همراه با لذیذترین غذاها پذیرایی نماییم. برای هماهنگی می‌توانید با همکاران ما تماس بگیرید تا در زمان موردنظر جلسه کاری خود را در مجتمع پذیرایی آفتاب‌مهتاب برگزار نمایید.
+
+</p>
+                  </div>
+                  <div class="item">
+                    <h2 style="font-family: 'mfg' ;
+                     font-style: normal;">میزبانی اختصاصی و حرفه ای
+</h2>
+                     <p class="s-12 l-8 center" style="font-family: 'mfg' ;
+                          font-style: normal;">مفتخریم در مجموعه پذیرایی آفتاب‌مهتاب با بهره‌گیری از توان نیروهای تخصصی میزبان جلسات و میهمانی‌های اختصاصی شما مطابق با میل خودتان باشیم. شما می‌توانید همان‌طور که مایلید از میهمانان خود در مجموعه ما پذیرایی نمایید و لذت یک میهمانی مجلل، سنتی یا مدرن را تجربه نمایید. برای این امر می‌توانید با همکاران ما تماس بگیرید تا با مشاوره متخصصین پذیرایی در خدمتتان باشیم.
+
+</p>
+                  </div>
+                  <div class="item">
+                       <h2 style="font-family: 'mfg' ;
+                          font-style: normal;">لذت یک میهمانی به‌یادماندنی
+</h2>
+                     <p class="s-12 l-8 center" style="font-family: 'mfg' ;
+                          font-style: normal;">ما در مجموعه پذیرایی آفتاب‌مهتاب آماده پذیرایی از جشن‌ها و تولدهای شما هستیم تا بتوانید بدون نگرانی در محیطی زیبا و با تمام امکانات موردنظر از میهمانان خود پذیرایی نمایید. مجموعه ما با تلاش نیروهای کارآزموده در خدمت شماست تا بهترین خدمات را به شما ارائه کند.
+
+</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- FIRST BLOCK -->
+<div id="app">
+  <a><img src="Aftab.jpg" alt="/img/Aftab.jpg" style="width:100%;"></a>
+</div>
+
+
+         <!-- GALLERY -->
+         <div id="third-block" style="background-color:#f89d13 ">
+            <div class="line">
+               <h2 style="padding-bottom: 6%">Responsive gallery</h2>
+
+               <div class="margin">
+                  <div class="s-12 l-3">
+                     <img src="img/a1.jpg">
+
+                  </div>
+                  <div class="s-12 l-3">
+                     <img src="img/a2.jpg">
+
+
+                  </div>
+                  <div class="s-12 l-3">
+                     <img src="img/a3.jpg">
+
+                  </div>
+                  <div class="s-12 l-3">
+                     <img src="img/a4.jpg">
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <div id="City">
+           <img src="city.jpg" alt="MOb" style="width:100%;">
+         </div>
+
+
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+         <div class="line" style="text-align:center">
+            <img  class="arj" src="arjang.png" alt="">
+
+            <div class="s-12 l-12" style="">
+               <p>Copyright 2019, Reza iMany<br>
+				                Arjang iranian<br>
+                +98 13 42949 </p>
+            </div>
+         </div>
+      </footer>
+
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {
+           $("#owl-demo").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : false,
+         	singleItem:true,
+			transitionStyle : "fadeUp"
+           });
+           $("#owl-demo2").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
+           });
+         });
+
+      </script>
+	  <script type="text/javascript">
+        <!--
+          document.login.username.focus();
+        //-->
+      </script>
+   </body>
+</html>
